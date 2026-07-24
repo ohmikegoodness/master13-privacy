@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Support for the Master 13 iOS game">
+  <title>Master 13 — Support</title>
+  <style>
+    :root {
+      --felt: #00261c;
+      --panel: #003326;
+      --ink: #f2eee4;
+      --muted: #b8c7c0;
+      --gold: #ffc233;
+      --line: rgba(255, 194, 51, 0.24);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #00402e 0%, var(--felt) 100%);
+      color: var(--ink);
+      font: 17px/1.7 "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(760px, calc(100% - 32px));
+      min-height: calc(100vh - 96px);
+      margin: 48px auto;
+      padding: clamp(28px, 6vw, 64px);
+      background: rgba(0, 51, 38, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      color: var(--gold);
+      font-size: clamp(2.3rem, 7vw, 4.2rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+    .intro { margin: 16px 0 40px; }
+    h2 {
+      margin: 40px 0 10px;
+      color: var(--gold);
+      font-size: 1.45rem;
+      font-weight: 500;
+    }
+    p, li { color: var(--muted); }
+    strong { color: var(--ink); }
+    a { color: var(--gold); }
+    ul, ol { padding-left: 1.4rem; }
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: var(--gold);
+      color: var(--felt);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Master 13</p>
+    <h1>Support</h1>
+    <p class="intro">Help with gameplay, online matches, and purchases.</p>
+
+    <h2>Contact support</h2>
+    <p>
+      Email us with a description of the issue, your app version, and the steps
+      that caused it. Please do not include passwords, payment-card information,
+      or other sensitive information.
+    </p>
+    <a class="button" href="mailto:support.master13@gmail.com?subject=Master%2013%20Support">
+      Email support
+    </a>
+
+    <h2>Restore purchases</h2>
+    <p>Permanent cosmetic purchases can be restored using the Apple Account that originally purchased them:</p>
+    <ol>
+      <li>Open Master 13 and go to the Shop.</li>
+      <li>Scroll to the Restore Purchases section.</li>
+      <li>Tap Restore Purchases and allow the App Store check to finish.</li>
+    </ol>
+    <p>
+      Master 13 does not receive your payment-card details. Purchase processing
+      and refunds are handled by Apple.
+    </p>
+
+    <h2>Game Center and online play</h2>
+    <ul>
+      <li>Confirm that you are signed in to Game Center in iOS Settings.</li>
+      <li>Check your internet connection and reopen Master 13.</li>
+      <li>Matchmaking may take longer when fewer compatible players are online.</li>
+      <li>AI and local play remain available without an online match.</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>
+      Read the
+      <a href="https://ohmikegoodness.github.io/master13-privacy/">Master 13 Privacy Policy</a>
+      or email us with a privacy question or request.
+    </p>
+
+    <footer>
+      © 2026 Master 13. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
