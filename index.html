@@ -72,7 +72,7 @@
   <main>
     <p class="eyebrow">Master 13</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective July 23, 2026</p>
+    <p class="updated">Effective July 28, 2026</p>
 
     <p>
       This Privacy Policy explains how Master 13 (“the app,” “we,” “us,” or
@@ -87,7 +87,7 @@
       contact support, we receive the information you voluntarily include in
       that communication, such as your email address and message.
     </p>
-    <p>The app may handle the following information to provide its features:</p>
+    <p>The app handles the following information to provide its features:</p>
     <ul>
       <li>
         <strong>Game Center information:</strong> If you use Game Center,
@@ -101,17 +101,19 @@
         Apple’s Game Center service.
       </li>
       <li>
-        <strong>Seasonal award verification:</strong> The app may use a
-        one-way hashed version of your Game Center player identifier to look up
-        seasonal leaderboard award records in Apple CloudKit. These records
-        may include the season, leaderboard category, placement, award time,
-        and a verification identifier.
+        <strong>Seasonal award verification:</strong> Master 13 creates and
+        retains developer-controlled seasonal award records in Apple CloudKit.
+        The records use a one-way hashed version of your Game Center player
+        identifier and may include the season, leaderboard category, placement,
+        award time, and a verification identifier. The app uses the hashed
+        identifier to retrieve awards earned by that player.
       </li>
       <li>
         <strong>Purchases:</strong> In-app purchases are processed by Apple
         through StoreKit. We do not receive or store your payment-card details.
         The app checks Apple-provided transaction and entitlement information
-        to unlock purchased content.
+        to unlock purchased content. Master 13 does not upload or retain your
+        purchase history in developer-controlled storage.
       </li>
       <li>
         <strong>Local app data:</strong> Settings, game progress, statistics,
@@ -127,10 +129,12 @@
 
     <h2>How information is used</h2>
     <p>
-      Information is used only to operate the app’s gameplay, online matches,
-      leaderboards, achievements, seasonal rewards, purchases, preferences,
-      and related support. We do not sell personal information and do not use
-      information for third-party advertising or cross-app tracking.
+      The linked player identifier and gameplay or seasonal-award information
+      are collected only for app functionality: operating online features,
+      verifying leaderboard placement, delivering earned seasonal rewards, and
+      preventing duplicate awards. This information is not used for tracking,
+      advertising, marketing, or analytics. We do not sell personal information
+      or use it for third-party advertising or cross-app tracking.
     </p>
 
     <h2>Apple services</h2>
@@ -148,11 +152,13 @@
       subject to iOS backup behavior.
     </p>
     <p>
-      Seasonal award-verification records may be retained to prevent duplicate
-      awards and preserve leaderboard results. To ask about or request deletion
-      of information controlled by Master 13, email us at the address below.
-      Requests involving information controlled by Apple should be managed
-      through your Apple account or directed to Apple.
+      Seasonal award-verification records are retained to prevent duplicate
+      awards and preserve leaderboard results. These records are linked to the
+      player through a one-way hash of the Game Center player identifier. To
+      ask about or request deletion of information controlled by Master 13,
+      email us at the address below. Requests involving information controlled
+      by Apple should be managed through your Apple account or directed to
+      Apple.
     </p>
     <p>
       Support communications are retained only as reasonably necessary to
