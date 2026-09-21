@@ -72,130 +72,50 @@
   <main>
     <p class="eyebrow">Master 13</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective July 28, 2026</p>
+    <p class="updated">Effective September 20, 2026</p>
 
-    <p>
-      This Privacy Policy explains how Master 13 (“the app,” “we,” “us,” or
-      “our”) handles information when you use the Master 13 iOS game.
-    </p>
+    <p>This policy explains how Master 13 handles information when you use the iOS game, including online features being tested in pre-release builds. Features and account controls may differ between builds.</p>
 
-    <h2>Information handled by the app</h2>
-    <p>
-      Master 13 does not require you to create a separate account. Through the
-      app itself, we do not collect your name, email address, physical address,
-      contacts, precise location, photos, or advertising identifiers. If you
-      contact support, we receive the information you voluntarily include in
-      that communication, such as your email address and message.
-    </p>
-    <p>The app handles the following information to provide its features:</p>
+    <h2>Information we handle</h2>
     <ul>
-      <li>
-        <strong>Game Center information:</strong> If you use Game Center,
-        Apple provides the app with your Game Center player identifier and
-        display name. The app uses Game Center for authentication, matchmaking,
-        multiplayer games, friends features, leaderboards, and achievements.
-      </li>
-      <li>
-        <strong>Gameplay information:</strong> During online multiplayer,
-        game actions and match state are exchanged with other players through
-        Apple’s Game Center service.
-      </li>
-      <li>
-        <strong>Seasonal award verification:</strong> Master 13 creates and
-        retains developer-controlled seasonal award records in Apple CloudKit.
-        The records use a one-way hashed version of your Game Center player
-        identifier and may include the season, leaderboard category, placement,
-        award time, and a verification identifier. The app uses the hashed
-        identifier to retrieve awards earned by that player.
-      </li>
-      <li>
-        <strong>Purchases:</strong> In-app purchases are processed by Apple
-        through StoreKit. We do not receive or store your payment-card details.
-        The app checks Apple-provided transaction and entitlement information
-        to unlock purchased content. Master 13 does not upload or retain your
-        purchase history in developer-controlled storage.
-      </li>
-      <li>
-        <strong>Local app data:</strong> Settings, game progress, statistics,
-        presets, sound preferences, and cosmetic selections may be stored on
-        your device.
-      </li>
-      <li>
-        <strong>Support communications:</strong> If you email support, we use
-        your email address and the contents of your message to respond,
-        investigate the issue, and maintain appropriate support records.
-      </li>
+      <li><strong>Game Center identity:</strong> Apple provides player identifiers, a display name and identity-verification information. We use these for sign-in, multiplayer, leaderboards, achievements and seasonal awards. Online features can automatically create a Master 13 server profile linked to your Game Center identity; you do not enter a separate email or password.</li>
+      <li><strong>Server profile and sessions:</strong> Supabase stores a Master 13 player identifier, its Game Center binding, display name, authentication/session records and the timezone used for daily rewards. Signed Apple identity proofs are checked to prevent another player from claiming your profile.</li>
+      <li><strong>Online gameplay:</strong> Depending on the build and rollout, Quick Match uses Supabase or Apple's Game Center. Supabase processes searches, queue preferences, table membership, cards and moves, turn timing, reconnect state, results and reward receipts. The server validates moves and sends each player only the game information intended for them. Private rooms currently use Game Center.</li>
+      <li><strong>Seasonal awards:</strong> Developer-controlled records in Apple CloudKit contain hashed Game Center identifiers, season, leaderboard category, placement, award time and verification identifier. A hash still lets us associate a record with the corresponding player; it is not treated as anonymous data.</li>
+      <li><strong>Operational diagnostics:</strong> Hosting and authentication services process request times, network addresses, status/error information and account or session identifiers to operate, secure and troubleshoot the service. We do not use these records for advertising or cross-app tracking.</li>
+      <li><strong>Local data:</strong> Settings, presets, progress, statistics, cosmetics and connection/reward caches are stored on your device. iOS or your device backups may retain copies.</li>
+      <li><strong>Purchases:</strong> Apple processes in-app purchases through StoreKit. The app checks transaction and entitlement information to unlock content. We do not receive payment-card details or upload your purchase history to our game database.</li>
+      <li><strong>Support:</strong> If you contact us, we receive your email address and whatever information you choose to include. We use it to respond and resolve the request.</li>
     </ul>
+    <p>We do not ask for your physical address, contacts, precise location, photos or advertising identifier. Please avoid sending passwords or other sensitive information to support.</p>
 
-    <h2>How information is used</h2>
-    <p>
-      The linked player identifier and gameplay or seasonal-award information
-      are collected only for app functionality: operating online features,
-      verifying leaderboard placement, delivering earned seasonal rewards, and
-      preventing duplicate awards. This information is not used for tracking,
-      advertising, marketing, or analytics. We do not sell personal information
-      or use it for third-party advertising or cross-app tracking.
-    </p>
+    <h2>Why we use information</h2>
+    <p>We use identity, gameplay, award and diagnostic information to provide the game, authenticate players, match opponents, reconnect tables, validate results, deliver rewards, prevent duplicate awards or misuse, and resolve technical problems. We do not sell personal information or use it for advertising, marketing or cross-app tracking. Master 13 does not include an advertising or third-party behavioral analytics SDK.</p>
 
-    <h2>Apple services</h2>
-    <p>
-      Master 13 relies on Apple services including Game Center, CloudKit,
-      StoreKit, and the App Store. Apple may process information under its own
-      privacy policy. You can learn more at
-      <a href="https://www.apple.com/legal/privacy/">Apple Privacy</a>.
-    </p>
+    <h2>Service providers and other players</h2>
+    <p>Supabase hosts our server database, authentication, game processing and realtime updates. Apple provides Game Center, CloudKit, StoreKit, the App Store and iCloud. Other players see the display name and public table information needed to play, but not another player's private hand. We may share information with our providers as needed to operate these features, respond to your request or meet legal obligations.</p>
+    <p>Provider information is available in the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
 
-    <h2>Retention and deletion</h2>
-    <p>
-      Local app data remains on your device until it is reset within the app,
-      overwritten through normal use, or removed when you delete the app,
-      subject to iOS backup behavior.
-    </p>
-    <p>
-      Seasonal award-verification records are retained to prevent duplicate
-      awards and preserve leaderboard results. These records are linked to the
-      player through a one-way hash of the Game Center player identifier. To
-      ask about or request deletion of information controlled by Master 13,
-      email us at the address below. Requests involving information controlled
-      by Apple should be managed through your Apple account or directed to
-      Apple.
-    </p>
-    <p>
-      Support communications are retained only as reasonably necessary to
-      respond, keep support records, resolve disputes, or meet legal
-      obligations. You may request deletion using the contact address below.
-    </p>
+    <h2>Retention and backups</h2>
+    <p>Server profiles, identity bindings, results and reward receipts are retained to support continued play, reconnection and reward verification until account deletion or another applicable cleanup. Completed-table private engine state and hands are scheduled for archival after seven days; this does not delete all result or reward records. Identity-proof records are normally cleared after one day. Operational logs follow the hosting service's retention settings.</p>
+    <p>We make encrypted manual backups of application and authentication data and store them in a dedicated operator iCloud Drive folder. Backup retention is manually managed. A separate, restricted deletion journal helps prevent recovery of an older backup from restoring deleted accounts. Deletion handling includes reviewing controlled backup and recovery copies; an account is not marked fully deleted merely because its live profile has been removed.</p>
 
-    <h2>Children’s privacy</h2>
-    <p>
-      Master 13 is not directed to children under 13, and we do not knowingly
-      collect personal information directly from children under 13. If you
-      believe a child has provided information to us, please contact us.
-    </p>
+    <h2>Your choices and account deletion</h2>
+    <p>In builds that include the control, open <strong>Help → About &amp; Legal → Online Account &amp; Deletion</strong>. You can verify your current Game Center identity, request deletion, see the completion timeframe and check its status in the app. An accepted request stops access to the Master 13 server account while cleanup is completed. An existing table may continue with AI so opponents can finish.</p>
+    <p>Deletion covers the Master 13 server profile, associated account/session and gameplay records, reward history and developer-controlled seasonal-award records. Shared match records may retain opponents' results with the deleted player's identity removed. We retain a limited deletion record, including hashed identifiers and request/completion information, to honor the request, prevent accidental restoration and avoid reissuing deleted awards. These records are not used for gameplay, advertising or tracking.</p>
+    <p>Deleting the online account does not delete your Apple or Game Center account, Apple-managed leaderboard data or StoreKit purchases. Local solo progress and settings remain on your device. You can remove local app data by deleting the app, subject to iOS backup behavior. Requests involving Apple's own records should be managed with Apple.</p>
+    <p>Online account recreation, where offered, requires an intentional action after deletion finishes and creates a new profile. It does not restore deleted server history or prior seasonal awards. A recreated account can earn seasonal awards from the first full reward season after recreation. If your installed build does not yet include account controls, or you need help with privacy or support records, contact <a href="mailto:support.master13@gmail.com">support.master13@gmail.com</a>.</p>
+    <p>Support communications are retained as reasonably necessary to respond, resolve disputes and meet legal obligations. You may request their deletion using the same contact address.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Master 13 is not directed to children under 13. If you believe a child has provided personal information to us, please contact us so we can investigate and take appropriate action.</p>
 
     <h2>Security</h2>
-    <p>
-      We use reasonable safeguards appropriate to the information handled by
-      the app. No method of electronic storage or transmission is completely
-      secure.
-    </p>
+    <p>We use safeguards such as encrypted connections, restricted database access, identity verification and encrypted backups. No method of storage or transmission is completely secure.</p>
 
-    <h2>Changes to this policy</h2>
-    <p>
-      We may update this Privacy Policy as the app changes. The effective date
-      above will be revised when an updated policy is published.
-    </p>
-
-    <h2>Contact us</h2>
-    <p>
-      For privacy questions or requests, contact
-      <a href="mailto:support.master13@gmail.com">support.master13@gmail.com</a>.
-    </p>
-
-    <footer>
-      © 2026 Master 13. All rights reserved. ·
-      <a href="https://ohmikegoodness.github.io/master13-privacy/support/">Support</a>
-    </footer>
+    <h2>Changes and contact</h2>
+    <p>We may update this policy as the game changes and will revise the effective date above. For privacy questions or requests, contact <a href="mailto:support.master13@gmail.com">support.master13@gmail.com</a>.</p>
+    <footer>© 2026 Master 13. All rights reserved. · <a href="https://ohmikegoodness.github.io/master13-privacy/support/">Support</a></footer>
   </main>
 </body>
 </html>
